@@ -21,11 +21,11 @@ const Navbar: React.FC = () => {
       alignItems='center'
       minWidth='100vw'
       position='sticky'
+      boxShadow='md'
       top='0'
       zIndex='1000'
       background='black'
-      height='8vw'
-      boxShadow='md'
+      height='12vh'
       paddingY={4}
       paddingX={[2, 2, 8, 8]}
     >

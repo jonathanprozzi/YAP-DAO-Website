@@ -18,6 +18,7 @@ const WhatWeDoSection = () => (
     alignItems='center'
     minWidth='100vw'
     minHeight='100vh'
+    bgGradient='linear(#ffffff 0%, #d8b3fe 25%, brand.green 50%)'
     backgroundImage="url('/yap-bg-2-scaled.png')"
     backgroundPosition={["20% 0%", "center", "50% 50%", "50% 50%"]}
     backgroundSize='cover'

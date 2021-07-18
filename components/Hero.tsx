@@ -20,7 +20,7 @@ const Hero = ({ heroHeight = "100vh" }: HeroProps) => (
       <Box
         as='span'
         textTransform='uppercase'
-        letterSpacing='wide'
+        letterSpacing='wider'
         fontWeight='bold'
         fontFamily='Bebas Neue'
         fontSize={["xl", "xl", "4xl", "4xl"]}
@@ -43,7 +43,8 @@ const Hero = ({ heroHeight = "100vh" }: HeroProps) => (
       <Text
         fontSize={["lg", "lg", "4xl", "4xl"]}
         lineHeight={[6, 6, 9, 9]}
-        fontWeight='bold'
+        letterSpacing='tighter'
+        fontWeight='normal'
         maxWidth='30ch'
         textAlign='right'
       >
