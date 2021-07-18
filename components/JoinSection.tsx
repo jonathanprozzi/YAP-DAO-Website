@@ -3,13 +3,12 @@ import {
   Flex,
   Heading,
   HStack,
+  Button,
   Img,
   Stack,
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
-
-import { MdGroup, MdPermPhoneMsg } from "react-icons/md";
 
 const JoinSection = () => {
   return (
@@ -25,45 +24,43 @@ const JoinSection = () => {
           justify='center'
           direction={{ base: "column-reverse", md: "row" }}
         >
-          <Box flex='1' maxW='440px'>
-            <Heading
-              size='2xl'
-              fontWeight='extrabold'
-              color={useColorModeValue("blue.600", "blue.300")}
-            >
-              Ready to break down the walls?
+          <Box flex='1' maxW='400px'>
+            <Heading size='2xl' fontWeight='extrabold' color='brand.green'>
+              Ready to join the YAP DAO army?
             </Heading>
-            <Text
-              fontSize='lg'
-              fontWeight='medium'
-              color={useColorModeValue("gray.600", "inherit")}
-              mt='6'
-            >
-              Our support gurus are help you achieve design enlightenment. Check
-              our our FAQs, send us an email or give us a call.
-            </Text>
+            <Stack mt={{ base: "8", md: "16" }} spacing='4'>
+              <Text
+                fontSize='lg'
+                fontWeight='medium'
+                color={useColorModeValue("gray.600", "inherit")}
+                mt='6'
+              >
+                Join our army of crypto translators as we write and share
+                stories about emerging blockchain projects!
+              </Text>
+              <Text
+                fontSize='lg'
+                fontWeight='medium'
+                color={useColorModeValue("gray.600", "inherit")}
+                mt='6'
+              >
+                Join our army of crypto translators as we write and share
+                stories about emerging blockchain projects!
+              </Text>
+            </Stack>
 
             <Stack
               mt={{ base: "8", md: "16" }}
               spacing='4'
               fontWeight='extrabold'
             >
-              <HStack
-                spacing='5'
-                color={useColorModeValue("blue.600", "blue.300")}
+              <Button
+                variant='outline'
+                color='brand.green'
+                borderColor='brand.green'
               >
-                <Box fontSize='3xl' as={MdPermPhoneMsg} />
-                <Text fontSize={{ base: "xl", md: "2xl" }}>1 800 513 4545</Text>
-              </HStack>
-              <HStack
-                spacing='5'
-                color={useColorModeValue("blue.600", "blue.300")}
-              >
-                <Box fontSize='3xl' as={MdGroup} />
-                <Text fontSize={{ base: "xl", md: "2xl" }}>
-                  Free design consultations
-                </Text>
-              </HStack>
+                Join us
+              </Button>
             </Stack>
           </Box>
 
