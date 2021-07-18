@@ -1,12 +1,9 @@
 import { Flex, Text } from "@chakra-ui/react";
 
-interface FooterCopyrightProps {
-  content?: string;
-}
-
-const Copyright = ({ content = "YAP DAO" }: FooterCopyrightProps) => (
+const Copyright = ({ content = "YAP DAO" }) => (
   <Flex
     direction='row'
+    alignSelf={{ base: "center", sm: "start" }}
     alignItems='center'
     justifyContent='center'
     minWidth='100vw'

@@ -1,24 +1,18 @@
 import { Box, Stack } from "@chakra-ui/react";
-import * as React from "react";
 import Copyright from "./Copyright";
-import { Logo } from "./Logo";
-import { SocialMediaLinks } from "./SocialMediaLinks";
+import Logo from "./Logo";
+import SocialLinks from "./SocialLinks";
 
 const Footer = () => (
-  <Box
-    as='footer'
-    role='contentinfo'
-    mx='auto'
-    maxW='7xl'
-    py='12'
-    px={{ base: "4", md: "8" }}
-  >
-    <Stack>
+  <Box as='footer' role='contentinfo' paddingTop={8} backgroundColor='black'>
+    <Stack paddingX={{ base: "4", md: "16" }} maxW='7xl'>
       <Stack direction='row' spacing='4' align='center' justify='space-between'>
         <Logo />
-        <SocialMediaLinks />
+        <SocialLinks />
       </Stack>
-      <Copyright alignSelf={{ base: "center", sm: "start" }} />
     </Stack>
+    <Copyright content='YAP DAO. All rights reserved.' />
   </Box>
 );
+
+export default Footer;
