@@ -26,7 +26,6 @@ const SiteLayout = ({ children, minHeight = "100vh" }) => {
       >
         {children}
       </Flex>
-      <Footer />
     </Flex>
   );
 };

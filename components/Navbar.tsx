@@ -44,8 +44,17 @@ const Navbar: React.FC = () => {
           <Link href='/' passHref>
             <ChakraLink
               display={["none", "none", "inline-flex", "inline-flex"]}
+              textDecoration='none'
             >
-              <Text fontSize='lg' color='white' marginRight={4}>
+              <Text
+                fontSize='lg'
+                color='brand.white'
+                marginRight={4}
+                transition='all ease-in-out .25s'
+                _hover={{
+                  color: "brand.green",
+                }}
+              >
                 About
               </Text>
             </ChakraLink>
@@ -53,16 +62,36 @@ const Navbar: React.FC = () => {
           <Link href='/services' passHref>
             <ChakraLink
               display={["none", "none", "inline-flex", "inline-flex"]}
+              textDecoration='none'
             >
-              <Text fontSize='lg' color='white' marginRight={4}>
+              <Text
+                fontSize='lg'
+                color='brand.white'
+                marginRight={4}
+                transition='all ease-in-out .25s'
+                textDecoration='none'
+                _hover={{
+                  color: "brand.green",
+                }}
+              >
                 Services
               </Text>
             </ChakraLink>
           </Link>
-
           <Link href='/contact' passHref>
-            <ChakraLink>
-              <Text fontSize='lg' color='white' marginRight={4}>
+            <ChakraLink
+              display={["none", "none", "inline-flex", "inline-flex"]}
+              textDecoration='none'
+            >
+              <Text
+                fontSize='lg'
+                color='brand.white'
+                marginRight={4}
+                transition='all ease-in-out .25s'
+                _hover={{
+                  color: "brand.green",
+                }}
+              >
                 Contact
               </Text>
             </ChakraLink>
