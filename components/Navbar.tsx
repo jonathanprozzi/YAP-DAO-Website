@@ -57,7 +57,7 @@ const Navbar: React.FC = () => {
           </a>
         </Link>
         <Flex direction='row' align='center' justify='center'>
-          <Link href='/' passHref>
+          <Link href='/about' passHref>
             <ChakraLink
               display={["none", "none", "inline-flex", "inline-flex"]}
               textDecoration='none'
@@ -72,6 +72,25 @@ const Navbar: React.FC = () => {
                 }}
               >
                 About
+              </Text>
+            </ChakraLink>
+          </Link>
+          <Link href='/projects' passHref>
+            <ChakraLink
+              display={["none", "none", "inline-flex", "inline-flex"]}
+              textDecoration='none'
+            >
+              <Text
+                fontSize='lg'
+                color='brand.white'
+                marginRight={4}
+                transition='all ease-in-out .25s'
+                textDecoration='none'
+                _hover={{
+                  color: "brand.green",
+                }}
+              >
+                Projects
               </Text>
             </ChakraLink>
           </Link>

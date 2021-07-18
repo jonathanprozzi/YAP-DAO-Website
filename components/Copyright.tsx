@@ -4,7 +4,7 @@ interface FooterCopyrightProps {
   content?: string;
 }
 
-const FooterCopyright = ({ content = "YAP DAO" }: FooterCopyrightProps) => (
+const Copyright = ({ content = "YAP DAO" }: FooterCopyrightProps) => (
   <Flex
     direction='row'
     alignItems='center'
@@ -25,4 +25,4 @@ const FooterCopyright = ({ content = "YAP DAO" }: FooterCopyrightProps) => (
   </Flex>
 );
 
-export default FooterCopyright;
+export default Copyright;

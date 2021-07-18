@@ -1,18 +1,24 @@
-import { Box, Flex, Stack } from "@chakra-ui/react";
-import FooterCopyright from "./FooterCopyright";
+import { Box, Stack } from "@chakra-ui/react";
+import * as React from "react";
+import Copyright from "./Copyright";
+import { Logo } from "./Logo";
+import { SocialMediaLinks } from "./SocialMediaLinks";
 
 const Footer = () => (
   <Box
     as='footer'
-    position='absolute'
-    bottom='0'
-    minWidth='100vw'
-    backgroundColor='black'
-    boxShadow='md'
+    role='contentinfo'
+    mx='auto'
+    maxW='7xl'
+    py='12'
+    px={{ base: "4", md: "8" }}
   >
-    <Flex direction='column' justify='center' align='center'></Flex>
-    <FooterCopyright />
+    <Stack>
+      <Stack direction='row' spacing='4' align='center' justify='space-between'>
+        <Logo />
+        <SocialMediaLinks />
+      </Stack>
+      <Copyright alignSelf={{ base: "center", sm: "start" }} />
+    </Stack>
   </Box>
 );
-
-export default Footer;
