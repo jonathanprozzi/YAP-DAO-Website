@@ -16,27 +16,27 @@ const Navbar: React.FC = () => {
   return (
     <Flex
       as='nav'
-      direction='column'
-      justify='center'
-      align='center'
+      direction='row'
+      justifyContent='center'
+      alignItems='center'
       minWidth='100vw'
-      height='8vh'
-      bg='black'
       position='sticky'
+      background='black'
+      height='8vw'
       boxShadow='md'
-      paddingY={8}
+      paddingY={4}
       paddingX={[2, 2, 8, 8]}
     >
       <Flex
         direction='row'
-        justify='space-around'
+        justifyContent='space-between'
         align='center'
-        width={["100vw", "100vw", "80vw", "80vw"]}
+        width={["100vw", "100vw", "100vw", "100vw"]}
         paddingX={[7, 4, 6, 8]}
       >
         <Link href='/' passHref>
           <a>
-            <Flex direction='row' align='center'>
+            <Flex direction='row' alignItems='center'>
               <VisuallyHidden>
                 <Heading as='h1' size='md' color='white'>
                   YAP DAO
