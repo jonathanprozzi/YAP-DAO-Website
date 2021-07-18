@@ -9,12 +9,12 @@ const Hero = ({ heroHeight = "100vh" }: HeroProps) => (
     direction='column'
     justifyContent='center'
     alignItems='center'
+    minWidth='100vw'
     height='100vh'
     backgroundImage="url('/yap-hero-scaled.png')"
     backgroundPosition={["20% 0%", "center", "50% 50%", "50% 50%"]}
     backgroundSize='cover'
     backgroundRepeat='no-repeat'
-    minWidth='100vw'
   >
     <Flex direction='column' alignItems='flex-start' justifyContent='center'>
       <Box
@@ -29,7 +29,9 @@ const Hero = ({ heroHeight = "100vh" }: HeroProps) => (
         Introducing
       </Box>
       <Heading
+        as='h2'
         fontSize={["20vw", "20vw", "10vw", "10vw"]}
+        fontWeight='normal'
         bgGradient='linear(to-l, #81e6d9, #d6bcfa)'
         // bgGradient='linear(to-r, #7E02FC, #23B6FF, #76EFED)'
         bgClip='text'
