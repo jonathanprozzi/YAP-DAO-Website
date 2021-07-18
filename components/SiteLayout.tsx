@@ -9,12 +9,10 @@ const SiteLayout = ({ children, minHeight = "100vh" }) => {
       overflowX='hidden'
       margin='0 auto'
       minHeight={minHeight ? minHeight : "100vh"}
-      maxHeight='100vh'
       minWidth='100vw'
+      position='relative'
     >
-      <Heading as='h1' display='none'>
-        YAP DAO
-      </Heading>
+      <Navbar />
       <Flex
         direction='column'
         align='center'
@@ -24,6 +22,7 @@ const SiteLayout = ({ children, minHeight = "100vh" }) => {
       >
         {children}
       </Flex>
+      <Footer />
     </Flex>
   );
 };
