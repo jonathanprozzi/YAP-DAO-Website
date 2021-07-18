@@ -1,6 +1,7 @@
 import { Box, Flex, Heading } from "@chakra-ui/react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import FooterCopyright from "./FooterCopyright";
 
 const SiteLayout = ({ children, minHeight = "100vh" }) => {
   return (
@@ -26,6 +27,7 @@ const SiteLayout = ({ children, minHeight = "100vh" }) => {
       >
         {children}
       </Flex>
+      <Footer />
     </Flex>
   );
 };

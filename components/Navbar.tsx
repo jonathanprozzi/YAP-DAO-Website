@@ -6,7 +6,10 @@ import {
   Link as ChakraLink,
   Text,
   IconButton,
+  VisuallyHidden,
   Icon,
+  AspectRatio,
+  Image,
 } from "@chakra-ui/react";
 
 const Navbar: React.FC = () => {
@@ -34,9 +37,20 @@ const Navbar: React.FC = () => {
         <Link href='/' passHref>
           <a>
             <Flex direction='row' align='center'>
-              <Heading as='h1' size='md' color='white'>
-                YAP DAO
-              </Heading>
+              <VisuallyHidden>
+                <Heading as='h1' size='md' color='white'>
+                  YAP DAO
+                </Heading>
+              </VisuallyHidden>
+              <AspectRatio maxW='50px' width='50px' height='50px' ratio={1 / 1}>
+                <Image
+                  src='/yap-nav-logo.png'
+                  alt='YAPDAO Logo'
+                  objectFit='cover'
+                  width='50px'
+                  height='50px'
+                />
+              </AspectRatio>
             </Flex>
           </a>
         </Link>
