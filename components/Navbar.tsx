@@ -21,6 +21,8 @@ const Navbar: React.FC = () => {
       alignItems='center'
       minWidth='100vw'
       position='sticky'
+      top='0'
+      zIndex='1000'
       background='black'
       height='8vw'
       boxShadow='md'
