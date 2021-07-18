@@ -12,6 +12,16 @@ const theme = extendTheme({
     body: "Roboto",
     mono: "Menlo, monospace",
   },
+  colors: {
+    brand: {
+      black: "#000000",
+      offWhite: "#f7f7f7",
+      purple: "#7e02fc",
+      pink: "#ff4aed",
+      blue: "#23b6ff",
+      green: "#76efed",
+    },
+  },
 });
 
 export default theme;

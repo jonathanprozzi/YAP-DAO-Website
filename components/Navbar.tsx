@@ -9,7 +9,7 @@ import {
   Icon,
 } from "@chakra-ui/react";
 
-const Header: React.FC = () => {
+const Navbar: React.FC = () => {
   return (
     <Flex
       as='nav'
@@ -73,4 +73,4 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header;
+export default Navbar;

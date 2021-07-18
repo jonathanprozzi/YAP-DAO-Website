@@ -1,5 +1,5 @@
 import { Box, Flex, Heading } from "@chakra-ui/react";
-import Header from "./Header";
+import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 const SiteLayout = ({ children, minHeight = "100vh" }) => {
@@ -12,7 +12,7 @@ const SiteLayout = ({ children, minHeight = "100vh" }) => {
       maxHeight='100vh'
       minWidth='100vw'
     >
-      <Header />
+      <Navbar />
       <Heading as='h1' display='none'>
         YAP DAO
       </Heading>
