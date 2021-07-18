@@ -11,7 +11,7 @@ const Hero = ({ heroHeight = "100vh" }: HeroProps) => (
     alignItems='center'
     height='100vh'
     backgroundImage="url('/yap-hero-scaled.png')"
-    backgroundPosition='50% 50%'
+    backgroundPosition={["20% 0%", "center", "50% 50%", "50% 50%"]}
     backgroundSize='cover'
     backgroundRepeat='no-repeat'
     minWidth='100vw'
@@ -23,15 +23,15 @@ const Hero = ({ heroHeight = "100vh" }: HeroProps) => (
         letterSpacing='wide'
         fontWeight='bold'
         fontFamily='Bebas Neue'
-        fontSize='4xl'
+        fontSize={["xl", "xl", "4xl", "4xl"]}
         lineHeight='1rem'
       >
         Introducing
       </Box>
       <Heading
-        fontSize='10vw'
-        // bgGradient='linear(to-l, #81e6d9, #d6bcfa)'
-        bgGradient='linear(to-r, #7E02FC, #23B6FF, #76EFED)'
+        fontSize={["20vw", "20vw", "10vw", "10vw"]}
+        bgGradient='linear(to-l, #81e6d9, #d6bcfa)'
+        // bgGradient='linear(to-r, #7E02FC, #23B6FF, #76EFED)'
         bgClip='text'
         textTransform='uppercase'
         paddingTop='0'
@@ -39,8 +39,8 @@ const Hero = ({ heroHeight = "100vh" }: HeroProps) => (
         YAP DAO
       </Heading>
       <Text
-        fontSize='2xl'
-        lineHeight={7}
+        fontSize={["lg", "lg", "4xl", "4xl"]}
+        lineHeight={[6, 6, 9, 9]}
         fontWeight='bold'
         maxWidth='30ch'
         textAlign='right'
