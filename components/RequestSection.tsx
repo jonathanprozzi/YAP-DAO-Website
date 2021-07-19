@@ -1,12 +1,15 @@
-import { Box, Button, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Button, Heading, Text } from "@chakra-ui/react";
 
 const RequestSection = () => (
   <Box as='section' backgroundColor='white'>
-    <Box
-      maxW='2xl'
-      mx='auto'
-      px={{ base: "6", lg: "8" }}
-      py={{ base: "16", sm: "20" }}
+    <Flex
+      direction='column'
+      alignItems='center'
+      justifyContent='center'
+      maxWidth='2xl'
+      marginX='auto'
+      paddingX={{ base: "6", lg: "8" }}
+      paddingY={{ base: "16", sm: "20" }}
       textAlign='center'
     >
       <Heading
@@ -16,7 +19,7 @@ const RequestSection = () => (
         letterSpacing='tight'
         color='black'
       >
-        Request our services.
+        Request our services
       </Heading>
       <Text mt='4' fontSize='lg' color='gray.900'>
         YAP DAO is a community that provides public relations and communications
@@ -34,7 +37,7 @@ const RequestSection = () => (
       >
         Request Services
       </Button>
-    </Box>
+    </Flex>
   </Box>
 );
 

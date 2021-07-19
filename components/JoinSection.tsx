@@ -44,8 +44,17 @@ const JoinSection = () => {
                 color={useColorModeValue("gray.600", "inherit")}
                 mt='6'
               >
-                Join our army of crypto translators as we write and share
-                stories about emerging blockchain projects!
+                The{" "}
+                <Text
+                  as='span'
+                  bgGradient='linear(to-l, brand.pink, brand.green, brand.blue)'
+                  bgClip='text'
+                >
+                  future of work in web 3.0
+                </Text>{" "}
+                is not only for coders and developers. We need passionate
+                communicators who want to join our community of creatives to
+                tell the stories of emerging blockchain and crypto projects!
               </Text>
             </Stack>
 

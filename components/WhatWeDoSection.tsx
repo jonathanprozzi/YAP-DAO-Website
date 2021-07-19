@@ -20,6 +20,7 @@ const WhatWeDoSection = () => (
     minHeight='100vh'
     bgGradient='linear(#ffffff 0%, #d8b3fe 25%, brand.green 50%)'
     backgroundImage="url('/yap-bg-2-scaled.png')"
+    // backgroundImage="url('/yap-banner.png')"
     backgroundPosition={["20% 0%", "center", "50% 50%", "50% 50%"]}
     backgroundSize='cover'
     backgroundRepeat='no-repeat'
@@ -29,6 +30,7 @@ const WhatWeDoSection = () => (
         <Flex>
           <Heading
             as='h2'
+            color='brand.green'
             fontSize={["20vw", "20vw", "10vw", "10vw"]}
             textTransform='uppercase'
             fontWeight='normal'
@@ -37,7 +39,7 @@ const WhatWeDoSection = () => (
             What We Do
           </Heading>
         </Flex>
-        <Stack>
+        <Stack color='brand.offwhite'>
           <UnorderedList>
             <ListItem fontSize='2xl'>Communication</ListItem>
             <ListItem fontSize='2xl'>Organization</ListItem>

@@ -9,7 +9,13 @@ import {
 import Service from "./Service";
 
 const ServicesSection = () => (
-  <Box as='section' maxW='5xl' mx='auto' py='12' px={{ base: "6", md: "8" }}>
+  <Box
+    as='section'
+    maxWidth='5xl'
+    marginX='auto'
+    paddingY={20}
+    paddingX={{ base: "6", md: "8" }}
+  >
     <SimpleGrid
       columns={{ base: 1, md: 2 }}
       spacingX='10'
