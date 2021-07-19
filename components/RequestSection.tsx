@@ -32,8 +32,8 @@ const RequestSection = () => (
         href='#'
         size='lg'
         fontWeight='bold'
-        color='brandPurple.700'
-        colorScheme='brandPurple'
+        color='brandBlue.700'
+        colorScheme='brandBlue'
         transition='all ease-in-out .25s'
       >
         Request Services

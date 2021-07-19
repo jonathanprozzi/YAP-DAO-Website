@@ -72,7 +72,7 @@ const JoinSection = () => {
                 color='brand.green'
                 borderColor='brand.green'
               >
-                Join us
+                Join Us
               </Button>
             </Stack>
           </Box>
