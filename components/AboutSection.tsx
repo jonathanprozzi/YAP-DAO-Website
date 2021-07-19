@@ -26,7 +26,12 @@ const AboutSection = () => (
           alignItems='center'
           justifyContent='center'
         >
-          <Flex direction='column' alignItems='center' justifyContent='center'>
+          <Flex
+            direction='column'
+            alignItems='center'
+            justifyContent='center'
+            order={{ base: 1, md: 1 }}
+          >
             <Heading
               as='h3'
               color='brand.green'
@@ -41,7 +46,12 @@ const AboutSection = () => (
               field.
             </Text>
           </Flex>
-          <Box flex='1' maxW='400px' h={{ base: "300px", md: "360px" }}>
+          <Box
+            flex='1'
+            maxW='400px'
+            h={{ base: "300px", md: "360px" }}
+            order={{ base: 2, md: 2 }}
+          >
             <Img
               alt=''
               w='full'
@@ -51,7 +61,12 @@ const AboutSection = () => (
               src='/yap-cube.png'
             />
           </Box>
-          <Box flex='1' maxW='400px' h={{ base: "300px", md: "360px" }}>
+          <Box
+            flex='1'
+            maxW='400px'
+            h={{ base: "300px", md: "360px" }}
+            order={{ base: 4, md: 3 }}
+          >
             <Img
               alt=''
               w='full'
@@ -61,7 +76,12 @@ const AboutSection = () => (
               src='/yap-torus.png'
             />
           </Box>
-          <Flex direction='column' alignItems='center' justifyContent='center'>
+          <Flex
+            direction='column'
+            alignItems='center'
+            justifyContent='center'
+            order={{ base: 3, md: 4 }}
+          >
             <Heading
               as='h3'
               color='brand.green'
@@ -80,7 +100,12 @@ const AboutSection = () => (
               scale.
             </Text>
           </Flex>
-          <Flex direction='column' alignItems='center' justifyContent='center'>
+          <Flex
+            direction='column'
+            alignItems='center'
+            justifyContent='center'
+            order={{ base: 5, md: 5 }}
+          >
             <Heading
               as='h3'
               color='brand.green'
@@ -96,7 +121,12 @@ const AboutSection = () => (
               productive way, the DeFi ecosystem risks becoming an echo chamber.
             </Text>
           </Flex>
-          <Box flex='1' maxW='400px' h={{ base: "300px", md: "360px" }}>
+          <Box
+            flex='1'
+            maxW='400px'
+            h={{ base: "300px", md: "360px" }}
+            order={{ base: 6, md: 6 }}
+          >
             <Img
               alt=''
               w='full'
@@ -106,21 +136,6 @@ const AboutSection = () => (
               src='/yap-disc.png'
             />
           </Box>
-          {/* <Box flex='1' maxW='400px' h={{ base: "300px", md: "360px" }}>
-          <Img
-            alt=''
-            w='full'
-            h='full'
-            objectFit='cover'
-            objectPosition='right'
-            src='/yap-connector.png'
-          />
-        </Box>
-        <Flex direction='column' alignItems='center' justifyContent='center'>
-          <Heading as='h3'>Our Mission</Heading>
-          YAP DAO provides essential and supportive services to help other DAOs
-          tell their stories, and communicate their message on a global scale.
-        </Flex> */}
         </SimpleGrid>
       </Box>
     </Box>
