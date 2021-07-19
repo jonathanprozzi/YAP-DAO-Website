@@ -32,8 +32,7 @@ const Hero = ({ heroHeight = "100vh" }: HeroProps) => (
         as='h2'
         fontSize={["20vw", "20vw", "10vw", "10vw"]}
         fontWeight='normal'
-        bgGradient='linear(to-l, #81e6d9, #d6bcfa)'
-        // bgGradient='linear(to-r, #7E02FC, #010202, #76EFED)'
+        bgGradient='linear(to-r, #23B6FF,#76EFED , #FF4AED)'
         bgClip='text'
         textTransform='uppercase'
         paddingTop='0'
