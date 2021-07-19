@@ -8,7 +8,7 @@ const RequestSection = () => (
       justifyContent='center'
       maxWidth='2xl'
       marginX='auto'
-      paddingX={{ base: "6", lg: "8" }}
+      paddingX={{ base: "7", lg: "8" }}
       paddingY={{ base: "16", sm: "20" }}
       textAlign='center'
     >

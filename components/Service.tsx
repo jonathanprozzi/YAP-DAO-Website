@@ -11,14 +11,20 @@ const Feature = ({ title, children, icon }: ServiceProps) => {
     <Stack
       spacing={{ base: "3", md: "6" }}
       direction={{ base: "column", md: "row" }}
+      alignItems={{ base: "center", md: "flex-start" }}
+      justifyContent={{ base: "center", md: "flex-start" }}
     >
       <Box fontSize='6xl'>{icon}</Box>
-      <Stack spacing='1'>
+      <Stack
+        spacing='1'
+        alignItems={{ base: "center", md: "flex-start" }}
+        justifyContent={{ base: "center", md: "flex-start" }}
+      >
         <Text fontWeight='extrabold' fontSize='lg' color='brand.green'>
           {title}
         </Text>
 
-        <Box>{children}</Box>
+        <Box maxW={{ base: "30ch", md: "80ch" }}>{children}</Box>
       </Stack>
     </Stack>
   );

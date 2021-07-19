@@ -12,11 +12,15 @@ import {
 
 const JoinSection = () => {
   return (
-    <Box as='section' backgroundColor='gray.900'>
+    <Box
+      as='section'
+      backgroundColor='gray.900'
+      paddingX={{ base: "4", md: "0" }}
+    >
       <Box
         maxW={{ base: "xl", md: "7xl" }}
         marginX='auto'
-        paddingX={{ base: "6", md: "8" }}
+        paddingX={{ base: "7", lg: "8" }}
         paddingY='12'
       >
         <Flex
@@ -28,12 +32,12 @@ const JoinSection = () => {
             <Heading size='2xl' fontWeight='extrabold' color='brand.green'>
               Ready to join the YAP DAO army?
             </Heading>
-            <Stack mt={{ base: "8", md: "16" }} spacing='4'>
+            <Stack marginTop={{ base: "4", md: "6" }} spacing='4'>
               <Text
                 fontSize='lg'
                 fontWeight='medium'
                 color={useColorModeValue("gray.600", "inherit")}
-                mt='6'
+                marginTop='6'
               >
                 Join our army of crypto translators as we write and share
                 stories about emerging blockchain projects!
