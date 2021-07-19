@@ -61,11 +61,11 @@ const Navbar: React.FC = () => {
             <ChakraLink
               display={["none", "none", "inline-flex", "inline-flex"]}
               textDecoration='none'
+              marginRight={4}
             >
               <Text
                 fontSize='lg'
                 color='brand.white'
-                marginRight={4}
                 transition='all ease-in-out .25s'
                 _hover={{
                   color: "brand.green",
@@ -79,11 +79,11 @@ const Navbar: React.FC = () => {
             <ChakraLink
               display={["none", "none", "inline-flex", "inline-flex"]}
               textDecoration='none'
+              marginRight={4}
             >
               <Text
                 fontSize='lg'
                 color='brand.white'
-                marginRight={4}
                 transition='all ease-in-out .25s'
                 textDecoration='none'
                 _hover={{
@@ -98,11 +98,11 @@ const Navbar: React.FC = () => {
             <ChakraLink
               display={["none", "none", "inline-flex", "inline-flex"]}
               textDecoration='none'
+              marginRight={4}
             >
               <Text
                 fontSize='lg'
                 color='brand.white'
-                marginRight={4}
                 transition='all ease-in-out .25s'
                 textDecoration='none'
                 _hover={{
@@ -117,11 +117,11 @@ const Navbar: React.FC = () => {
             <ChakraLink
               display={["none", "none", "inline-flex", "inline-flex"]}
               textDecoration='none'
+              marginRight={4}
             >
               <Text
                 fontSize='lg'
                 color='brand.white'
-                marginRight={4}
                 transition='all ease-in-out .25s'
                 _hover={{
                   color: "brand.green",
