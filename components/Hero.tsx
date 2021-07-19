@@ -12,7 +12,7 @@ const Hero = ({ heroHeight = "100vh" }: HeroProps) => (
     minWidth='100vw'
     height='100vh'
     backgroundImage="url('/yap-hero-scaled.png')"
-    backgroundPosition={["20% 0%", "center", "50% 50%", "50% 50%"]}
+    backgroundPosition={{ base: "30% 10%", md: "50% 50%" }}
     backgroundSize='cover'
     backgroundRepeat='no-repeat'
   >
