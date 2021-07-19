@@ -21,7 +21,7 @@ const WhatWeDoSection = () => (
       minHeight='50vh'
       backgroundImage="url('/yap-glow-banner-no-shapes.png')"
       backgroundPosition={{ base: "10% 30%", md: "20% 60%" }}
-      backgroundSize='auto'
+      backgroundSize='cover'
       backgroundRepeat='no-repeat'
     >
       <Flex direction='column' alignItems='flex-start' justifyContent='center'>
