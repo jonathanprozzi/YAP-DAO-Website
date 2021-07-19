@@ -21,6 +21,18 @@ const theme = extendTheme({
       blue: "#23b6ff",
       green: "#76efed",
     },
+    brandPurple: {
+      50: "#f5e4ff",
+      100: "#d9b2ff",
+      200: "#bf80ff",
+      300: "#a54dff",
+      400: "#8b1bfd",
+      500: "#7202e4",
+      600: "#5900b2",
+      700: "#3f0080",
+      800: "#26004f",
+      900: "#0f001f",
+    },
   },
 });
 
