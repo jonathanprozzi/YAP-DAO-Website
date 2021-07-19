@@ -20,12 +20,16 @@ const WhatWeDoSection = () => (
       minWidth='100vw'
       minHeight='50vh'
       backgroundImage="url('/yap-glow-banner-no-shapes.png')"
-      backgroundPosition={{ base: "20% 0%", md: "20% 60%" }}
+      backgroundPosition={{ base: "10% 30%", md: "20% 60%" }}
       backgroundSize='auto'
       backgroundRepeat='no-repeat'
     >
       <Flex direction='column' alignItems='flex-start' justifyContent='center'>
-        <Grid templateColumns='repeat(2, 1fr)' gap={16} alignItems='center'>
+        <Grid
+          templateColumns={{ base: "1fr", md: "repeat(2, 1fr)" }}
+          gap={{ base: "4", md: "16" }}
+          alignItems='center'
+        >
           <Flex>
             <Heading
               as='h2'
@@ -38,7 +42,7 @@ const WhatWeDoSection = () => (
               What We Do
             </Heading>
           </Flex>
-          <Stack color='brand.offwhite'>
+          <Stack color='brand.offwhite' paddingBottom={{ base: "8", md: "0" }}>
             <UnorderedList>
               <ListItem fontSize='2xl'>Communication</ListItem>
               <ListItem fontSize='2xl'>Organization</ListItem>
