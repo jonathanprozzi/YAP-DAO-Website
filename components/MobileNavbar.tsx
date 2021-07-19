@@ -8,7 +8,6 @@ interface Props {
 
 const MobileNavbar: React.FC<Props> = (props) => {
   const { isOpen, onClose, children } = props;
-  const bg = "black";
   return (
     <AnimatePresence>
       {isOpen && (
@@ -20,16 +19,16 @@ const MobileNavbar: React.FC<Props> = (props) => {
         >
           <Flex
             direction='column'
-            w='100%'
-            bg={bg}
-            h='100vh'
+            width='100%'
+            background='black'
+            height='100vh'
             overflow='auto'
-            pos='absolute'
+            position='absolute'
             top={0}
             left={0}
             zIndex={20}
-            px={4}
-            py={4}
+            paddingX={4}
+            paddingY={4}
           >
             {children}
             <CloseButton pos='absolute' top={4} right={4} onClick={onClose} />
