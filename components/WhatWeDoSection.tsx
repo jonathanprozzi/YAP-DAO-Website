@@ -42,7 +42,11 @@ const WhatWeDoSection = () => (
               What We Do
             </Heading>
           </Flex>
-          <Stack color='brand.offwhite' paddingBottom={{ base: "8", md: "0" }}>
+          <Stack
+            color='brand.offwhite'
+            paddingBottom={{ base: "8", md: "0" }}
+            alignItems='center'
+          >
             <UnorderedList>
               <ListItem fontSize='2xl'>Communication</ListItem>
               <ListItem fontSize='2xl'>Organization</ListItem>
