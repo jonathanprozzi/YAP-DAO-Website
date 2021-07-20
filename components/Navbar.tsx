@@ -239,7 +239,7 @@ const Navbar: React.FC = () => {
             title='Join Us'
             isOpen={formModal.isOpen}
             onClose={formModal.onClose}
-            content={<ContactForm />}
+            content={<ContactForm onClose={formModal.onClose} />}
           ></FormModal>
         </Box>
       </Flex>

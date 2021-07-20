@@ -12,11 +12,13 @@ export const config = {
 const createJoinUs: NextApiHandler = async (req, res) => {
   const contactName = req.body.contactName;
   const contactEmail = req.body.contactEmail;
+  const contactMessage = req.body.contactMessage;
 
   try {
     const airtableRecord = await contactTable.create({
       Name: contactName,
       Email: contactEmail,
+      Message: contactMessage,
     });
 
     res.status(200).json({
