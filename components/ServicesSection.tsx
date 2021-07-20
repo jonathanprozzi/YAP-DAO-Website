@@ -50,8 +50,8 @@ const ServicesSection = () => (
             </svg>
           }
         >
-          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-          kasd gubergren, no sea takimata sanctus.
+          We do PR for announcements, launches, product developments, and more,
+          for emerging and legacy projects in the DeFi space.
         </Service>
         <Service
           title='Media Training'
@@ -74,11 +74,13 @@ const ServicesSection = () => (
             </svg>
           }
         >
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore.
+          We can assist with booking and training media appearances such as
+          podcasts, conferences, interviews, and any other virtual or in person
+          appearances. We’ll teach you the language to authentically communicate
+          your message and story to crypto and mainstream publications!
         </Service>
         <Service
-          title='Content Production'
+          title='Content'
           icon={
             <svg
               height='100'
@@ -99,11 +101,11 @@ const ServicesSection = () => (
             </svg>
           }
         >
-          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
-          kasd gubergren, no sea takimata sanctus.
+          We produce content such as Opinion Pieces and feature story ideas in
+          order to tell your story on a global scale.
         </Service>
         <Service
-          title='Consultancy Services'
+          title='Miscellaneous'
           icon={
             <svg
               height='100'
@@ -134,8 +136,8 @@ const ServicesSection = () => (
             </svg>
           }
         >
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore.
+          Tell us about the roadblocks in sharing your story, and we will help
+          you craft meaningful narratives to get your project noticed.
         </Service>
       </SimpleGrid>
     </Box>
