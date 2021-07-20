@@ -7,6 +7,7 @@ import {
   Text,
   useColorModeValue as mode,
 } from "@chakra-ui/react";
+import { useForm } from "react-hook-form";
 
 const ContactForm = () => {
   return (
