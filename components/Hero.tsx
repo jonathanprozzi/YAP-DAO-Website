@@ -47,8 +47,7 @@ const Hero = ({ heroHeight = "100vh" }: HeroProps) => (
         maxWidth='30ch'
         textAlign='right'
       >
-        To bridge the communication gap between technology and the mainstream
-        world.
+        Translating crypto and DeFi for the world.
       </Text>
     </Flex>
   </Flex>

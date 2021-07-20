@@ -93,12 +93,6 @@ const AboutSection = () => (
               YAP DAOs mission is to bridge the communication gap between
               emerging technology and the mainstream world.
             </Text>
-            <br />
-            <Text>
-              YAP DAO provides essential and supportive services to help other
-              DAOs tell their stories, and communicate their message on a global
-              scale.
-            </Text>
           </Flex>
           <Flex
             direction='column'

@@ -48,11 +48,13 @@ const WhatWeDoSection = () => (
             alignItems='center'
           >
             <UnorderedList>
-              <ListItem fontSize='2xl'>Communication</ListItem>
-              <ListItem fontSize='2xl'>Organization</ListItem>
-              <ListItem fontSize='2xl'>Time Management</ListItem>
-              <ListItem fontSize='2xl'>Networking</ListItem>
-              <ListItem fontSize='2xl'>Adapatability</ListItem>
+              <ListItem fontSize='2xl'>Media Relations</ListItem>
+              <ListItem fontSize='2xl'>Strategic Communications</ListItem>
+              <ListItem fontSize='2xl'>Brand Positioning</ListItem>
+              <ListItem fontSize='2xl'>Investor Relations</ListItem>
+              <ListItem fontSize='2xl'>Crisis Communications</ListItem>
+              <ListItem fontSize='2xl'>Media Training</ListItem>
+              <ListItem fontSize='2xl'>Event Management</ListItem>
             </UnorderedList>
           </Stack>
         </Grid>
