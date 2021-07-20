@@ -122,7 +122,7 @@ const ProjectsSection = () => {
               title='Request Services'
               isOpen={formModal.isOpen}
               onClose={formModal.onClose}
-              content={<RequestUsForm />}
+              content={<RequestUsForm onClose={formModal.onClose} />}
             ></FormModal>
           </Flex>
         </Grid>

@@ -29,7 +29,7 @@ const RequestUsForm = ({ onClose }) => {
   async function onSubmit(values) {
     setSending(false);
 
-    const res = await fetch("/api/create-join-us", {
+    const res = await fetch("/api/create-request", {
       method: "POST",
       body: JSON.stringify({
         contactName: values.name,
