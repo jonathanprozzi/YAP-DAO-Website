@@ -11,13 +11,18 @@ import {
   AspectRatio,
   Image,
   Stack,
+  Button,
   useDisclosure,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import MobileNavbar from "./MobileNavbar";
+import FormModal from "./FormModal";
+import ContactForm from "./ContactForm";
 
 const Navbar: React.FC = () => {
   const mobileNav = useDisclosure();
+  const formModal = useDisclosure();
+
   return (
     <Flex
       as='nav'
@@ -125,32 +130,27 @@ const Navbar: React.FC = () => {
                   </Text>
                 </ChakraLink>
               </Link>
-              <Link href='#contact' passHref>
-                <ChakraLink
-                  // display={["none", "none", "inline-flex", "inline-flex"]}
-                  textDecoration='none'
-                  marginRight={4}
-                >
-                  <Text
-                    fontSize='lg'
-                    color='brand.white'
-                    transition='all ease-in-out .25s'
-                    _hover={{
-                      color: "brand.green",
-                    }}
-                  >
-                    Contact
-                  </Text>
-                </ChakraLink>
-              </Link>
+              <Button
+                marginTop={4}
+                paddingY={4}
+                paddingX={4}
+                onClick={formModal.onOpen}
+                variant='solid'
+                width='100%'
+                colorScheme='brandBlue'
+              >
+                Contact
+              </Button>
             </Box>
           </Stack>
         </MobileNavbar>
         <Box
           direction='row'
-          align='center'
-          justify='center'
+          alignItems='baseline'
+          justifyContent='center'
           display={{ base: "none", md: "flex" }}
+          paddingY={4}
+          paddingRight={16}
         >
           <Link href='#about' passHref>
             <ChakraLink
@@ -208,7 +208,7 @@ const Navbar: React.FC = () => {
               </Text>
             </ChakraLink>
           </Link>
-          <Link href='#contact' passHref>
+          {/* <Link href='#contact' passHref>
             <ChakraLink
               // display={["none", "none", "inline-flex", "inline-flex"]}
               textDecoration='none'
@@ -225,7 +225,22 @@ const Navbar: React.FC = () => {
                 Contact
               </Text>
             </ChakraLink>
-          </Link>
+          </Link> */}
+          <Button
+            paddingY={2}
+            paddingX={4}
+            onClick={formModal.onOpen}
+            variant='outline'
+            colorScheme='brandBlue'
+          >
+            Contact
+          </Button>
+          <FormModal
+            title='Contact Us'
+            isOpen={formModal.isOpen}
+            onClose={formModal.onClose}
+            content={<ContactForm />}
+          ></FormModal>
         </Box>
       </Flex>
     </Flex>
