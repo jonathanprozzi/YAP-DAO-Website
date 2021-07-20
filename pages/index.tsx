@@ -15,7 +15,7 @@ export default function Home() {
       <WhatWeDoSection />
       <ServicesSection />
       <ProjectsSection />
-      <RequestSection />
+
       <JoinSection />
     </Box>
   );

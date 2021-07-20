@@ -41,7 +41,7 @@ export const Project = (props: Props) => {
         </Text>
       </Box>
       <Flex
-        align='center'
+        align='start'
         spacing='5'
         borderTop='1px solid'
         borderColor='brandPurple.50'

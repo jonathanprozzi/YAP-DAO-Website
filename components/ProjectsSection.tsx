@@ -14,7 +14,7 @@ import Project from "./Project";
 import { projects } from "./_projectData";
 
 const ProjectsSection = () => (
-  <Box id='projects' as='section' background='black'>
+  <Box id='projects' as='section' background='brand.offWhite'>
     <Box
       maxW={{ base: "xl", md: "6xl" }}
       marginX='auto'
@@ -24,37 +24,17 @@ const ProjectsSection = () => (
       paddingTop={20}
       paddingBottom={20}
     >
-      <Flex
-        direction='column'
-        alignItems='center'
-        justifyContent='center'
-        marginBottom={{ base: "4", md: "8" }}
-      >
-        <Heading
-          as='h2'
-          size='3xl'
-          fontWeight='extrabold'
-          letterSpacing='tight'
-          color='brand.offWhite'
-        >
-          Our Projects
-        </Heading>
-        <Text marginTop='4' fontSize='xl' maxW='2xl' color='whiteAlpha.800'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation
-        </Text>
-      </Flex>
       <Grid
-        templateColumns={{ base: "1fr", md: "1fr" }}
+        templateColumns={{ base: "1fr", md: "1fr 24rem" }}
         gap={{ base: "8", md: "12", lg: "16" }}
-        maxWidth='4xl'
+        maxWidth='6xl'
         paddingX={{ base: "6", md: "8" }}
         marginX={{ base: "2", md: "auto" }}
       >
         <SimpleGrid
           marginTop={{ base: "8", md: "0" }}
           columns={{ base: 1, md: 2 }}
+          spacing='10'
         >
           {projects.map((project, index) => (
             <Project
@@ -101,6 +81,39 @@ const ProjectsSection = () => (
             </Flex>
           </Flex>
         </SimpleGrid>
+        <Flex
+          direction='column'
+          alignItems='center'
+          justifyContent='flex-start'
+        >
+          <Heading
+            as='h2'
+            size='3xl'
+            fontWeight='extrabold'
+            letterSpacing='tight'
+            color='gray.900'
+          >
+            Our Projects
+          </Heading>
+          <Text marginTop='4' fontSize='xl' maxW='2xl' color='blackAlpha.800'>
+            YAP DAO is a community that provides public relations and
+            communications support to the DeFi world. Request our services for
+            your flourishing project.
+          </Text>
+          <Button
+            mt='8'
+            as='a'
+            href='#'
+            size='lg'
+            width='100%'
+            fontWeight='bold'
+            color='brandBlue.700'
+            colorScheme='brandBlue'
+            transition='all ease-in-out .25s'
+          >
+            Request Services
+          </Button>
+        </Flex>
       </Grid>
     </Box>
   </Box>
