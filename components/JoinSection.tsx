@@ -8,9 +8,14 @@ import {
   Stack,
   Text,
   useColorModeValue,
+  useDisclosure,
 } from "@chakra-ui/react";
+import FormModal from "./FormModal";
+import JoinUsForm from "./JoinUsForm";
 
 const JoinSection = () => {
+  const formModal = useDisclosure();
+
   return (
     <Box
       as='section'
@@ -71,9 +76,16 @@ const JoinSection = () => {
                 variant='outline'
                 color='brand.green'
                 borderColor='brand.green'
+                onClick={formModal.onOpen}
               >
                 Join Us
               </Button>
+              <FormModal
+                title='Join Us'
+                isOpen={formModal.isOpen}
+                onClose={formModal.onClose}
+                content={<JoinUsForm />}
+              ></FormModal>
             </Stack>
           </Box>
 

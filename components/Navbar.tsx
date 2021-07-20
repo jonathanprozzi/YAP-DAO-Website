@@ -236,7 +236,7 @@ const Navbar: React.FC = () => {
             Contact
           </Button>
           <FormModal
-            title='Contact Us'
+            title='Join Us'
             isOpen={formModal.isOpen}
             onClose={formModal.onClose}
             content={<ContactForm />}

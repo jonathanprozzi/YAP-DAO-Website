@@ -10,10 +10,10 @@ import {
 
 const ContactForm = () => {
   return (
-    <Box as='section' bg={mode("gray.100", "gray.700")} py='12'>
+    <Box as='section' py='12'>
       <Box
         textAlign='center'
-        bg={mode("white", "gray.800")}
+        bg='gray.800'
         shadow='lg'
         maxW={{ base: "xl", md: "3xl" }}
         mx='auto'
@@ -23,16 +23,15 @@ const ContactForm = () => {
       >
         <Box maxW='md' mx='auto'>
           <Text
-            color={mode("green.600", "green.400")}
+            color='brand.blue'
             fontWeight='bold'
             fontSize='sm'
             letterSpacing='wide'
+            textTransform='uppercase'
           >
-            6,000+ PEOPLE ALREADY JOINED ❤️️
+            Reach out to Yap Dao
           </Text>
-          <Heading mt='4' fontWeight='extrabold'>
-            Get new products every month on your inbox!
-          </Heading>
+          <Heading mt='4' fontWeight='extrabold'></Heading>
           <Box mt='6'>
             <form
               onSubmit={(e) => {

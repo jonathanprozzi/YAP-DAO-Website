@@ -7,7 +7,6 @@ import {
   ModalBody,
   ModalCloseButton,
   Button,
-  useDisclosure,
 } from "@chakra-ui/react";
 
 interface Props {
@@ -22,9 +21,9 @@ const FormModal: React.FC<Props> = (props) => {
 
   return (
     <>
-      <Modal isOpen={isOpen} onClose={onClose}>
+      <Modal isOpen={isOpen} onClose={onClose} size='xl'>
         <ModalOverlay />
-        <ModalContent>
+        <ModalContent background='gray.900' minWidth='20vw' paddingY={8}>
           <ModalHeader>{title}</ModalHeader>
           <ModalCloseButton />
           <ModalBody>{content}</ModalBody>
