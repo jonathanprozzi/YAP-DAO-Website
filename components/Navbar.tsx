@@ -25,8 +25,8 @@ const Navbar: React.FC = () => {
       justifyContent='center'
       alignItems='center'
       minWidth='100vw'
-      position='sticky'
-      boxShadow='md'
+      position='fixed'
+      boxShadow='lg'
       top='0'
       zIndex='1000'
       background='black'
@@ -73,7 +73,7 @@ const Navbar: React.FC = () => {
         <MobileNavbar isOpen={mobileNav.isOpen} onClose={mobileNav.onClose}>
           <Stack spacing={5}>
             <Box direction='row' align='center' justify='center'>
-              <Link href='/#about' passHref>
+              <Link href='#about' passHref>
                 <ChakraLink textDecoration='none' marginRight={4}>
                   <Text
                     fontSize='lg'
@@ -87,7 +87,7 @@ const Navbar: React.FC = () => {
                   </Text>
                 </ChakraLink>
               </Link>
-              <Link href='/projects' passHref>
+              <Link href='#projects' passHref>
                 <ChakraLink
                   // display={["none", "none", "inline-flex", "inline-flex"]}
                   textDecoration='none'
@@ -125,7 +125,7 @@ const Navbar: React.FC = () => {
                   </Text>
                 </ChakraLink>
               </Link>
-              <Link href='/contact' passHref>
+              <Link href='#contact' passHref>
                 <ChakraLink
                   // display={["none", "none", "inline-flex", "inline-flex"]}
                   textDecoration='none'
@@ -152,7 +152,7 @@ const Navbar: React.FC = () => {
           justify='center'
           display={{ base: "none", md: "flex" }}
         >
-          <Link href='/#about' passHref>
+          <Link href='#about' passHref>
             <ChakraLink
               // display={["none", "none", "inline-flex", "inline-flex"]}
               textDecoration='none'
@@ -170,7 +170,7 @@ const Navbar: React.FC = () => {
               </Text>
             </ChakraLink>
           </Link>
-          <Link href='/projects' passHref>
+          <Link href='#projects' passHref>
             <ChakraLink
               // display={["none", "none", "inline-flex", "inline-flex"]}
               textDecoration='none'
@@ -208,7 +208,7 @@ const Navbar: React.FC = () => {
               </Text>
             </ChakraLink>
           </Link>
-          <Link href='/contact' passHref>
+          <Link href='#contact' passHref>
             <ChakraLink
               // display={["none", "none", "inline-flex", "inline-flex"]}
               textDecoration='none'

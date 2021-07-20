@@ -7,7 +7,8 @@ const ServicesSection = () => (
     as='section'
     background='black'
     width='100vw'
-    paddingY={20}
+    paddingTop={20}
+    paddingBottom={10}
     paddingX={{ base: "6", md: "8" }}
   >
     <Box marginX='auto' maxWidth='5xl' paddingX={{ base: "6", md: "8" }}>

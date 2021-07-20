@@ -1,6 +1,6 @@
 import { Box, Flex, Img, Text, useColorModeValue } from "@chakra-ui/react";
-import * as React from "react";
-import { FaLinkedinIn, FaDesktop } from "react-icons/fa";
+import internal from "node:stream";
+import { FaTwitter, FaDesktop } from "react-icons/fa";
 import ProjectSocialLink from "./ProjectSocialLink";
 
 interface Props {
@@ -12,51 +12,49 @@ interface Props {
   children: React.ReactNode;
 }
 
-export const Member = (props: Props) => {
+export const Project = (props: Props) => {
   const { logo, name, services, twitter, website, children } = props;
   return (
     <Flex
       direction='column'
-      bg={useColorModeValue("white", "gray.700")}
-      shadow={useColorModeValue("base", "none")}
+      backgroundColor='brand.offWhite'
+      boxShadow='lg'
+      rounded='md'
+      maxWidth={{ base: "15rem", md: "20rem" }}
     >
-      <Box p='6' flex='1'>
-        <Img
-          float='right'
-          alt={name}
-          w='16'
-          h='16'
-          rounded='lg'
-          objectFit='cover'
-          src={logo}
-          zIndex='1'
-        />
-        <Box mt='2'>
-          <Text fontWeight='bold'>{name}</Text>
-          <Text
-            color={useColorModeValue("gray.500", "whiteAlpha.700")}
-            fontWeight='medium'
-            fontSize='sm'
-          >
+      <Box padding={6}>
+        <Img alt={name} rounded='lg' objectFit='cover' src={logo} zIndex='1' />
+        <Box>
+          <Text fontWeight='bold' color='gray.900' marginTop={4}>
+            {name}
+          </Text>
+          <Text color='gray.900' fontWeight='medium' fontSize='sm'>
             {services}
           </Text>
         </Box>
         <Text
-          color={useColorModeValue("gray.600", "whiteAlpha.800")}
-          maxW={{ base: "unset", md: "20rem" }}
-          mt='6'
+          color='gray.900'
+          maxW={{ base: "unset", md: "40rem" }}
+          marginTop='6'
         >
           {children}
         </Text>
       </Box>
-      <Flex align='center' spacing='5' borderTopWidth='1px'>
-        <ProjectSocialLink icon={FaDesktop} href={twitter} borderEndWidth='1px'>
+      <Flex
+        align='center'
+        spacing='5'
+        borderTop='1px solid'
+        borderColor='brandPurple.50'
+      >
+        <ProjectSocialLink icon={FaTwitter} href={twitter} borderEndWidth='1px'>
           Twitter
         </ProjectSocialLink>
-        <ProjectSocialLink icon={FaLinkedinIn} href={website}>
+        <ProjectSocialLink icon={FaDesktop} href={website}>
           Website
         </ProjectSocialLink>
       </Flex>
     </Flex>
   );
 };
+
+export default Project;

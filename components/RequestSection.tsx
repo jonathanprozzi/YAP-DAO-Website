@@ -1,7 +1,7 @@
 import { Box, Flex, Button, Heading, Text } from "@chakra-ui/react";
 
 const RequestSection = () => (
-  <Box as='section' backgroundColor='white'>
+  <Box as='section' background='brand.offWhite'>
     <Flex
       direction='column'
       alignItems='center'
@@ -21,7 +21,7 @@ const RequestSection = () => (
       >
         Request our services
       </Heading>
-      <Text mt='4' fontSize='lg' color='gray.900'>
+      <Text marginTop='4' fontSize='lg' color='gray.900'>
         YAP DAO is a community that provides public relations and communications
         support to the DeFi world. Request our services for your flourishing
         project.

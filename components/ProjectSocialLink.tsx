@@ -12,15 +12,16 @@ const ProjectSocialLink = (props: Props) => {
     <Link
       flex='1'
       display='flex'
-      py='3'
+      paddingY='3'
       alignItems='center'
       justifyContent='center'
       fontWeight='bold'
       fontSize='sm'
       isExternal
-      color={useColorModeValue("blue.600", "blue.300")}
       href={href}
-      _hover={{ bg: useColorModeValue("gray.50", "gray.700") }}
+      color='gray.700'
+      transition='all ease-in-out .25s'
+      _hover={{ color: "brand.purple" }}
       {...rest}
     >
       <SocialIcon aria-hidden />

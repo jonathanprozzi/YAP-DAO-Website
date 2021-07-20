@@ -5,6 +5,7 @@ import RequestSection from "../components/RequestSection";
 import ServicesSection from "../components/ServicesSection";
 import WhatWeDoSection from "../components/WhatWeDoSection";
 import AboutSection from "../components/AboutSection";
+import ProjectsSection from "../components/ProjectsSection";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <AboutSection />
       <WhatWeDoSection />
       <ServicesSection />
+      <ProjectsSection />
       <RequestSection />
       <JoinSection />
     </Box>
