@@ -1,6 +1,5 @@
 import { NextApiHandler } from "next";
-import Airtable from "airtable";
-import { contactTable } from "../../libs/airtable";
+import { requestTable } from "../../libs/airtable";
 
 export const config = {
   api: {
@@ -10,13 +9,13 @@ export const config = {
   },
 };
 
-const createContact: NextApiHandler = async (req, res) => {
-  const contactName = req.body.campaignName;
+const createRequest: NextApiHandler = async (req, res) => {
+  const contactName = req.body.contactName;
   const contactEmail = req.body.contactEmail;
 
   try {
-    const airtableRecord = await contactTable.create({
-      Name: contactEmail,
+    const airtableRecord = await requestTable.create({
+      Name: contactName,
       Email: contactEmail,
     });
 
@@ -27,9 +26,9 @@ const createContact: NextApiHandler = async (req, res) => {
   } catch (error) {
     console.error(error);
     res.status(500).json({
-      err: "Something went wrong with creating the campaign.",
+      err: "Something went wrong with creating the request.",
     });
   }
 };
 
-export default createContact;
+export default createRequest;

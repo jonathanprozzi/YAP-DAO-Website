@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Box,
   Button,
@@ -8,11 +9,50 @@ import {
   useColorModeValue as mode,
   UnorderedList,
   ListItem,
-  useDisclosure,
+  FormErrorMessage,
+  FormLabel,
+  FormControl,
+  useToast,
 } from "@chakra-ui/react";
+import { useForm } from "react-hook-form";
 
-const RequestUsForm = () => {
-  const formModal = useDisclosure();
+const RequestUsForm = ({ onClose }) => {
+  const [isSending, setSending] = useState(false);
+  const toast = useToast();
+
+  const {
+    handleSubmit,
+    register,
+    formState: { errors, isSubmitting },
+  } = useForm();
+
+  async function onSubmit(values) {
+    setSending(false);
+
+    const res = await fetch("/api/create-join-us", {
+      method: "POST",
+      body: JSON.stringify({
+        contactName: values.name,
+        contactEmail: values.email,
+      }),
+      headers: {
+        "Content-type": "application/json",
+      },
+    });
+
+    const apiResponse = await res.json();
+    if (apiResponse) {
+      toast({
+        title: "Request Sent",
+        description: "Your request has been sent",
+        status: "success",
+        duration: 3000,
+        isClosable: true,
+      }),
+        setSending(false);
+      onClose();
+    }
+  }
 
   return (
     <Box as='section'>
@@ -27,7 +67,7 @@ const RequestUsForm = () => {
       >
         <Box maxW='md' marginX='auto'>
           <Text color='brand.blue' fontWeight='bold' letterSpacing='wide'>
-            Request our services for your flourishing project.
+            Entry is permissioned upon meeting the following requirements:
           </Text>
           <Heading mt='4' fontWeight='extrabold'></Heading>
           <Box marginY='6'>
@@ -35,24 +75,48 @@ const RequestUsForm = () => {
             communications support to the DeFi world. Reach out to us for Public
             Relations Services, Media Training, Content Production, and/or
             Consultancy Services.
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                // your subscribe logic here
-              }}
-            >
+            <form onSubmit={handleSubmit(onSubmit)}>
               <Stack marginTop={6}>
-                <Input
-                  aria-label='Enter your name'
-                  placeholder='Enter your name'
-                  rounded='base'
-                />
-                <Input
-                  aria-label='Enter your email'
-                  placeholder='Enter your contact email'
-                  rounded='base'
-                />
+                <FormControl isInvalid={errors.name}>
+                  <FormLabel htmlFor='name'>First name</FormLabel>
+                  <Input
+                    id='name'
+                    aria-label='Enter your name'
+                    placeholder='Enter your name'
+                    {...register("name", {
+                      required: "Your name is required",
+                      minLength: {
+                        value: 4,
+                        message: "Minimum length should be 2",
+                      },
+                    })}
+                    rounded='base'
+                  />
+                  <FormErrorMessage>
+                    {errors.name && errors.name.message}
+                  </FormErrorMessage>
+                </FormControl>
+                <FormControl isInvalid={errors.email}>
+                  <FormLabel htmlFor='email'>Email</FormLabel>
+                  <Input
+                    id='email'
+                    aria-label='Enter your email'
+                    placeholder='Enter your email to join'
+                    {...register("email", {
+                      required: "Your email is required",
+                      minLength: {
+                        value: 4,
+                        message: "Minimum length should be 2",
+                      },
+                    })}
+                    rounded='base'
+                  />
+                  <FormErrorMessage>
+                    {errors.email && errors.email.message}
+                  </FormErrorMessage>
+                </FormControl>
                 <Button
+                  isLoading={isSubmitting}
                   type='submit'
                   w='full'
                   colorScheme='brandGreen'
@@ -61,7 +125,7 @@ const RequestUsForm = () => {
                   fontSize='sm'
                   fontWeight='bold'
                 >
-                  Send Request
+                  Join now
                 </Button>
               </Stack>
             </form>

@@ -84,7 +84,7 @@ const JoinSection = () => {
                 title='Join Us'
                 isOpen={formModal.isOpen}
                 onClose={formModal.onClose}
-                content={<JoinUsForm />}
+                content={<JoinUsForm onClose={formModal.onClose} />}
               ></FormModal>
             </Stack>
           </Box>
