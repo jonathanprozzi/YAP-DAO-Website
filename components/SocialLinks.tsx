@@ -5,7 +5,7 @@ const SocialLinks = (props: ButtonGroupProps) => (
   <ButtonGroup variant='ghost' color='white' {...props}>
     <IconButton
       as='a'
-      href='#'
+      href='https://github.com/yapdao'
       aria-label='GitHub'
       icon={<FaGithub fontSize='20px' />}
       transition='all ease-in-out .25s'
