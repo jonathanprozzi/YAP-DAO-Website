@@ -25,16 +25,6 @@ const SocialLinks = (props: ButtonGroupProps) => (
     />
     <IconButton
       as='a'
-      href='https://twitter.com/YAPDAO_'
-      aria-label='Twitter'
-      icon={<FaTwitter fontSize='20px' />}
-      transition='all ease-in-out .25s'
-      _hover={{
-        color: "brand.blue",
-      }}
-    />
-    <IconButton
-      as='a'
       href='https://medium.com/yap-dao'
       aria-label='Medium'
       icon={<FaMedium fontSize='20px' />}
