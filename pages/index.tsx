@@ -6,6 +6,7 @@ import ServicesSection from "../components/ServicesSection";
 import WhatWeDoSection from "../components/WhatWeDoSection";
 import AboutSection from "../components/AboutSection";
 import ProjectsSection from "../components/ProjectsSection";
+import PublicationsSection from "../components/PublicationsSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <ServicesSection />
       <ProjectsSection />
       <JoinSection />
+      <PublicationsSection />
     </Box>
   );
 }
