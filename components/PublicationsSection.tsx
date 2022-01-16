@@ -14,10 +14,10 @@ const PublicationsSection = () => {
   return (
     <Box id='publications' as='section' background='white'>
       <Box
-        maxW={{ base: "xl", md: "7xl" }}
-        marginX={{ base: "20vw", md: "auto" }}
+        maxW={{ base: "xl", md: "8xl" }}
+        marginX={{ base: "10vw", md: "auto" }}
         paddingX={{ base: "6", md: "10" }}
-        paddingTop={{ base: "0", md: "4" }}
+        paddingY={{ base: "0", md: "12" }}
       >
         <Box mx='auto' px={{ base: "6", md: "8" }}>
           <Heading as='h2' textAlign='center' color='black' marginX='auto'>
@@ -30,7 +30,7 @@ const PublicationsSection = () => {
               lineHeight={[6, 6, 6, 6]}
               letterSpacing='widest'
               color='black'
-              marginTop={2}
+              marginTop={4}
               paddingTop={4}
               align='center'
             >
@@ -38,7 +38,7 @@ const PublicationsSection = () => {
             </Text>
           </Stack>
           <SimpleGrid
-            columns={{ base: 1, md: 2, lg: 6 }}
+            columns={{ base: 1, md: 2, lg: 7 }}
             spacing={{ base: "0", md: "2", lg: "4" }}
             margin={2}
             alignItems='center'
@@ -49,6 +49,7 @@ const PublicationsSection = () => {
             <Publications.Blockworks />
             <Publications.CryptoBriefing />
             <Publications.CryptoCoinShow />
+            <Publications.Crypto101 />
             <Publications.FranceCrypto />
           </SimpleGrid>
         </Box>

@@ -71,6 +71,20 @@ export const CryptoCoinShow = () => (
   </Box>
 );
 
+export const Crypto101 = () => (
+  <Box position='relative' backgroundColor='#007bff' paddingX={2}>
+    <Image
+      alt={`Crypto101`}
+      width={400}
+      height={200}
+      placeholder='blur'
+      objectFit='contain'
+      blurDataURL='/crypto101-logo.jpg'
+      src='/crypto101-logo.jpg'
+    />
+  </Box>
+);
+
 export const FranceCrypto = () => (
   <Box position='relative'>
     <Image
