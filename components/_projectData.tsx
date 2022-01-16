@@ -23,7 +23,7 @@ export const projects: Project[] = [
     services: "Public Relations",
     twitter: "https://twitter.com/PrimeDAO_",
     website: "https://prime.xyz",
-    description: "PrimeDAO is a current client.",
+    description: "PrimeDAO is a current YAP DAO client.",
   },
   {
     name: "AladdinDAO",
@@ -31,6 +31,6 @@ export const projects: Project[] = [
     services: "Public Relations",
     twitter: "https://twitter.com/aladdindao",
     website: "https://aladdin.club",
-    description: "AladdinDAO is a current client.",
+    description: "AladdinDAO is a current YAP DAO client.",
   },
 ];
