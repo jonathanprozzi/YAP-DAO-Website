@@ -23,7 +23,14 @@ export const Project = (props: Props) => {
       maxWidth={{ base: "15rem", md: "20rem" }}
     >
       <Box padding={6}>
-        <Img alt={name} rounded='lg' objectFit='cover' src={logo} zIndex='1' />
+        <Img
+          alt={name}
+          rounded='lg'
+          objectFit='cover'
+          src={logo}
+          maxHeight='75px'
+          zIndex='1'
+        />
         <Box>
           <Text fontWeight='bold' color='gray.900' marginTop={4}>
             {name}
