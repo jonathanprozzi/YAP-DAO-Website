@@ -89,10 +89,10 @@ export const CryptoNews = () => (
   <Box position='relative'>
     <Image
       alt={`Crypto News`}
-      width={200}
+      width={250}
       height={100}
       placeholder='blur'
-      objectFit='cover'
+      objectFit='contain'
       blurDataURL='/cryptonews-logo.jpg'
       src='/cryptonews-logo.jpg'
     />
@@ -112,5 +112,3 @@ export const FranceCrypto = () => (
     />
   </Box>
 );
-
-// The Defiant, Decrypt, Blockworks, Crypto Briefing, DeFi Slate,
