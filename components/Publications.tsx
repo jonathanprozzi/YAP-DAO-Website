@@ -6,7 +6,7 @@ export const TheDefiant = () => (
     <Image
       alt={`The Defiant`}
       width={400}
-      height={300}
+      height={200}
       placeholder='blur'
       objectFit='contain'
       blurDataURL='/the-defiant-logo.jpg'
@@ -19,8 +19,8 @@ export const Decrypt = () => (
   <Box position='relative'>
     <Image
       alt={`Decrypt`}
-      width={400}
-      height={400}
+      width={300}
+      height={100}
       placeholder='blur'
       objectFit='contain'
       blurDataURL='/decrypt.jpg'
@@ -34,7 +34,7 @@ export const Blockworks = () => (
     <Image
       alt={`Blockworks`}
       width={400}
-      height={400}
+      height={100}
       placeholder='blur'
       objectFit='contain'
       blurDataURL='/blockworks.jpg'
@@ -47,8 +47,8 @@ export const CryptoBriefing = () => (
   <Box position='relative'>
     <Image
       alt={`CryptoBriefing`}
-      width={400}
-      height={400}
+      width={300}
+      height={100}
       placeholder='blur'
       objectFit='contain'
       blurDataURL='/cryptobriefing-logo.jpg'
@@ -62,7 +62,7 @@ export const CryptoCoinShow = () => (
     <Image
       alt={`Crypto Coin Show`}
       width={400}
-      height={400}
+      height={100}
       placeholder='blur'
       objectFit='contain'
       blurDataURL='/crypto-coin-show-logo.jpg'
@@ -76,7 +76,7 @@ export const Crypto101 = () => (
     <Image
       alt={`Crypto101`}
       width={400}
-      height={200}
+      height={100}
       placeholder='blur'
       objectFit='contain'
       blurDataURL='/crypto101-logo.jpg'
@@ -89,10 +89,10 @@ export const CryptoNews = () => (
   <Box position='relative'>
     <Image
       alt={`Crypto News`}
-      width={400}
-      height={300}
+      width={200}
+      height={100}
       placeholder='blur'
-      objectFit='contain'
+      objectFit='cover'
       blurDataURL='/cryptonews-logo.jpg'
       src='/cryptonews-logo.jpg'
     />
@@ -104,7 +104,7 @@ export const FranceCrypto = () => (
     <Image
       alt={`France Crypto`}
       width={400}
-      height={300}
+      height={200}
       placeholder='blur'
       objectFit='contain'
       blurDataURL='/francecrypto-logo-FC.svg'
