@@ -85,6 +85,20 @@ export const Crypto101 = () => (
   </Box>
 );
 
+export const CryptoNews = () => (
+  <Box position='relative'>
+    <Image
+      alt={`Crypto News`}
+      width={400}
+      height={300}
+      placeholder='blur'
+      objectFit='contain'
+      blurDataURL='/cryptonews-logo.jpg'
+      src='/cryptonews-logo.jpg'
+    />
+  </Box>
+);
+
 export const FranceCrypto = () => (
   <Box position='relative'>
     <Image
@@ -98,19 +112,5 @@ export const FranceCrypto = () => (
     />
   </Box>
 );
-
-// export const DeFiSlate = () => (
-//   <Box position='relative'>
-//     <Image
-//       alt={`DeFiSlate`}
-//       width={400}
-//       height={400}
-//       placeholder='blur'
-//       objectFit='contain'
-//       blurDataURL='/the-defiant-logo.jpg'
-//       src='/the-defiant-logo.jpg'
-//     />
-//   </Box>
-// );
 
 // The Defiant, Decrypt, Blockworks, Crypto Briefing, DeFi Slate,

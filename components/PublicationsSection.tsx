@@ -52,6 +52,7 @@ const PublicationsSection = () => {
             <Publications.CryptoBriefing />
             <Publications.CryptoCoinShow />
             <Publications.Crypto101 />
+            <Publications.CryptoNews />
             <Publications.FranceCrypto />
           </SimpleGrid>
         </Box>
