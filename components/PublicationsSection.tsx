@@ -21,7 +21,7 @@ const PublicationsSection = () => {
       >
         <Box mx='auto' px={{ base: "6", md: "8" }}>
           <Heading as='h2' textAlign='center' color='black' marginX='auto'>
-            YAP DAO clients have been featured in these publications
+            YAP DAO has landed clients in the following publications:
           </Heading>
           <Stack>
             <Text
@@ -34,7 +34,9 @@ const PublicationsSection = () => {
               paddingTop={4}
               align='center'
             >
-              Our services have...
+              This is a non-exhaustive list of crypto focused publications where
+              we have placed our clients for news stories, features, OpEds, and
+              podcast interviews.
             </Text>
           </Stack>
           <SimpleGrid
