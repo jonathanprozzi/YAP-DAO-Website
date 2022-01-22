@@ -34,7 +34,12 @@ const JoinSection = () => {
           direction={{ base: "column-reverse", md: "row" }}
         >
           <Box flex='1' maxW='400px'>
-            <Heading size='2xl' fontWeight='extrabold' color='brand.green'>
+            <Heading
+              size='2xl'
+              lineHeight={{ base: "1.2", md: "1" }}
+              fontWeight='extrabold'
+              color='brand.green'
+            >
               Ready to join the YAP DAO army?
             </Heading>
             <Stack marginTop={{ base: "4", md: "6" }} spacing='4'>

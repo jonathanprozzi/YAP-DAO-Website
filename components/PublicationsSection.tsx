@@ -17,15 +17,23 @@ const PublicationsSection = () => {
       as='section'
       background='white'
       paddingX={{ base: "4", md: "0" }}
+      paddingY={8}
     >
       <Box
         maxW={{ base: "xl", md: "6xl" }}
-        marginX={{ base: "10vw", md: "auto" }}
+        marginX={{ base: "0", md: "auto" }}
         paddingX={{ base: "6", md: "10" }}
         paddingY={{ base: "0", md: "12" }}
       >
-        <Box marginX='auto' paddingX={{ base: "6", md: "8" }}>
-          <Heading as='h2' textAlign='center' color='black' marginX='auto'>
+        <Box marginX='auto' paddingX={{ base: "2", md: "8" }}>
+          <Heading
+            as='h2'
+            size='2xl'
+            textAlign='center'
+            lineHeight={{ base: "1.2", md: "1" }}
+            color='black'
+            marginX='auto'
+          >
             YAP DAO has landed clients in the following publications
           </Heading>
           <Stack>
