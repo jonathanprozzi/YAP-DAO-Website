@@ -3,6 +3,7 @@ import {
   Grid,
   Flex,
   Heading,
+  Link as ChakraLink,
   HStack,
   SimpleGrid,
   Text,
@@ -104,26 +105,30 @@ const ProjectsSection = () => {
               communications support to the DeFi world. Request our services for
               your flourishing project.
             </Text>
-            <Button
-              mt='8'
-              as='a'
-              href='#'
-              size='lg'
-              width='100%'
-              fontWeight='bold'
-              color='brandBlue.700'
-              colorScheme='brandBlue'
-              transition='all ease-in-out .25s'
-              onClick={formModal.onOpen}
+            <ChakraLink
+              isExternal
+              href='https://airtable.com/shr8BREIAget4GFmr'
+              _hover={{ textDecoration: "none" }}
             >
-              Request Services
-            </Button>
-            <FormModal
+              <Button
+                mt='8'
+                size='lg'
+                width='100%'
+                fontWeight='bold'
+                color='brandBlue.700'
+                colorScheme='brandBlue'
+                transition='all ease-in-out .25s'
+                // onClick={formModal.onOpen}
+              >
+                Request Services
+              </Button>
+            </ChakraLink>
+            {/* <FormModal
               title='Request Services'
               isOpen={formModal.isOpen}
               onClose={formModal.onClose}
               content={<RequestUsForm onClose={formModal.onClose} />}
-            ></FormModal>
+            ></FormModal> */}
           </Flex>
         </Grid>
       </Box>

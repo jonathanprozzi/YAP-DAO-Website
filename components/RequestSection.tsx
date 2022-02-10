@@ -4,13 +4,14 @@ import {
   Button,
   Heading,
   Text,
+  Link,
   useDisclosure,
 } from "@chakra-ui/react";
 import FormModal from "./FormModal";
 import RequestUsForm from "./RequestUsForm";
 
 const RequestSection = () => {
-  const formModal = useDisclosure();
+  // const formModal = useDisclosure();
   return (
     <Box as='section' background='brand.offWhite'>
       <Flex
@@ -37,25 +38,27 @@ const RequestSection = () => {
           communications support to the DeFi world. Request our services for
           your flourishing project.
         </Text>
-        <Button
-          mt='8'
-          as='a'
-          href='#'
-          size='lg'
-          fontWeight='bold'
-          color='brandBlue.700'
-          colorScheme='brandBlue'
-          transition='all ease-in-out .25s'
-          onClick={formModal.onOpen}
-        >
-          Request Services
-        </Button>
-        <FormModal
+        <Link isExternal href='https://airtable.com/shr8BREIAget4GFmr'>
+          <Button
+            mt='8'
+            as='a'
+            href='#'
+            size='lg'
+            fontWeight='bold'
+            color='brandBlue.700'
+            colorScheme='brandBlue'
+            transition='all ease-in-out .25s'
+            // onClick={formModal.onOpen}
+          >
+            Request Services
+          </Button>
+        </Link>
+        {/* <FormModal
           title='Request Services'
           isOpen={formModal.isOpen}
           onClose={formModal.onClose}
           content={<RequestUsForm onClose={formModal.onClose} />}
-        ></FormModal>
+        ></FormModal> */}
       </Flex>
     </Box>
   );
