@@ -7,17 +7,20 @@ import WhatWeDoSection from "../components/WhatWeDoSection";
 import AboutSection from "../components/AboutSection";
 import ProjectsSection from "../components/ProjectsSection";
 import PublicationsSection from "../components/PublicationsSection";
+import Transitioning from "../components/Transitioning";
 
 export default function Home() {
   return (
-    <Box minWidth='100vw' minHeight='100vh'>
-      <Hero />
+    // <Box minWidth="100vw" minHeight="100vh">
+    <Box>
+      <Transitioning />
+      {/* <Hero />
       <AboutSection />
       <WhatWeDoSection />
       <ServicesSection />
       <ProjectsSection />
       <JoinSection />
-      <PublicationsSection />
+      <PublicationsSection /> */}
     </Box>
   );
 }
